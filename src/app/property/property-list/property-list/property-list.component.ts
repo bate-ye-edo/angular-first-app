@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PropertyCardElement } from '../../property-card/property-card/property-card.component';
 @Component({
   selector: 'app-property-list',
   templateUrl: './property-list.component.html',
   styleUrls: ['./property-list.component.css']
 })
-export class PropertyListComponent implements OnInit {
+export class PropertyListComponent {
   propertyArr:Array<PropertyCardElement> =
   [
     <PropertyCardElement>{
@@ -37,12 +37,4 @@ export class PropertyListComponent implements OnInit {
 
   }
 
-  ngOnInit() {
-  }
-
-}
-
-class PropertyCardElement{
-  imagenPath:string = "";
-  titulo:string = "";
 }

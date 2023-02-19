@@ -1,3 +1,31 @@
 .card-mh-15{
   max-height: 35vh;
 }
+.card:hover img{
+  transform: scale(1.2,1.2);
+  opacity: 0.7;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+.card img{
+  transform: scale(1,1);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+.relative-div{
+  position: relative;
+}
+.btn-absolute{
+  position: absolute;
+  bottom: -25%;
+  margin-left: auto;
+  right: 50%;
+  transform: translateX(50%);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+.card:hover .btn-absolute{
+  bottom: 0%;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}

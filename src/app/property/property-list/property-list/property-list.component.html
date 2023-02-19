@@ -1,5 +1,5 @@
 <div class="d-flex flex-wrap justify-content-evenly" >
   <div *ngFor="let item of propertyArr" >
-    <app-property-card imagePath="{{item.imagenPath}}" titulo="{{item.titulo}}"></app-property-card>
+    <app-property-card [property]="item"></app-property-card>
   </div>
 </div>

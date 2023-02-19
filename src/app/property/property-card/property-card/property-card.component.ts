@@ -6,6 +6,10 @@ import { Input } from '@angular/core';
   styleUrls: ['./property-card.component.css']
 })
 export class PropertyCardComponent {
-  @Input() imagePath:string = "";
-  @Input() titulo:string = "";
+  @Input() property:PropertyCardElement= new PropertyCardElement();
+}
+
+export class PropertyCardElement{
+  imagenPath:string = "";
+  titulo:string = "";
 }
