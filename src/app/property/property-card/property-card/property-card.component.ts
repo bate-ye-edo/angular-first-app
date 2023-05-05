@@ -12,4 +12,10 @@ export class PropertyCardComponent {
 export class PropertyCardElement{
   imagenPath:string = "";
   titulo:string = "";
+  constructor(jsonObject?:any){
+    if(jsonObject){
+      this.imagenPath = jsonObject.imagenPath;
+      this.titulo = jsonObject.titulo;
+    }
+  }
 }
